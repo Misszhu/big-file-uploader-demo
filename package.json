@@ -1,0 +1,21 @@
+{
+  "name": "large-file-uploader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev:server": "nodemon src/server/index.js",
+    "dev:frontend": "nodemon src/frontend/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.8.4",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "multer": "^1.4.5-lts.2",
+    "uuid": "^9.0.0"
+  }
+}

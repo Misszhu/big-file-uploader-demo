@@ -16,6 +16,7 @@
     "cors": "^2.8.5",
     "express": "^4.21.2",
     "multer": "^1.4.5-lts.2",
-    "uuid": "^9.0.0"
+    "uuid": "^9.0.0",
+    "big-file-uploader": "^1.0.0"
   }
 }

@@ -4,6 +4,9 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+overrides:
+  big-file-uploader: link:../big-file-uploader
+
 importers:
 
   .:
@@ -11,6 +14,9 @@ importers:
       axios:
         specifier: ^1.8.4
         version: 1.8.4
+      big-file-uploader:
+        specifier: link:../big-file-uploader
+        version: link:../big-file-uploader
       cors:
         specifier: ^2.8.5
         version: 2.8.5

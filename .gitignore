@@ -34,5 +34,5 @@ Thumbs.db
 Desktop.ini
 
 # Uploads and temporary files
-src/uploads/
-src/temp/
+uploads/
+temp/

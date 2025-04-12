@@ -36,8 +36,8 @@ function App() {
 
     uploaderRef.current = new BigFileUploader({
       file,
-      url: 'http://localhost:3000/api/upload',
-      chunkSize: 2 * 1024 * 1024, // 2MB分片
+      baseURL: 'http://localhost:3000',
+      chunkSize: 5 * 1024 * 1024, // 5MB分片
       concurrent: 3,
       onProgress: (progress: number) => {
         setProgress(progress);
@@ -70,7 +70,7 @@ function App() {
 
   const handleResume = () => {
     if (uploaderRef.current) {
-      uploaderRef.current.start();
+      uploaderRef.current.resume();
       setIsPaused(false);
       setStatus('上传已继续...');
       setStatusClass('status');
@@ -104,7 +104,7 @@ function App() {
           <button
             className="btn"
             onClick={handleResume}
-            disabled={!isUploading || !isPaused}
+            disabled={isUploading || !isPaused}
           >
             继续
           </button>

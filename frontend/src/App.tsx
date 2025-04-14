@@ -1,5 +1,5 @@
 import { useState, useRef, useCallback } from 'react'
-import BigFileUploader from 'big-file-uploader'
+import BigFileUploader from 'big-file-uploader-lib'
 import './App.css'
 
 function App() {
